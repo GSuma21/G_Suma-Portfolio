@@ -11,9 +11,13 @@
     width: 100%;
   }
   
+  header{
+    z-index: 997;
+  }
   .s1 {
     width: 100%;
     position: relative;
+  
   }
   
   .s1 .nav1 {

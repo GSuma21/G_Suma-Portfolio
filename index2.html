@@ -1,130 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="suma.css">
-    <link rel="stylesheet" href="style1.css">
+    <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /><title>G Suma</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <style>
-        /* style="justify-content:justufy;" */
-        #my_pro{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }    
-
-    </style>
 </head>
+
 <body>
-    <header  id="header" class="fixed-top">
-      <nav class="navbar">
-          <h2></h2>
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-          <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#project">PROJECT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-
-          </ul>
-        </div>
-      </nav>
-      
-
-
-        
-    </header>
-    <section class="s" id="home">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+    <section class="s1" id="home">
+        <nav class="nav1">
+            <div class="navbar">
+                <div class="navLeft">
+                    <img class="logo" src="images/logo2.jpeg" alt="logo">
+                </div>
+                <div class="sidebardiv">
+                    <a class="sidebarlinks" href="#home">HOME</a>
+                    <a class="sidebarlinks" href="#about">ABOUT</a>
+                    <a class="sidebarlinks" href="#skills">SKILLS</a>
+                    <a class="sidebarlinks" href="#project">PROJECT</a>
+                    <a class="sidebarlinks" href="#contact">CONTACT</a>
+                </div>
+                <div class="navRight">
+                    <div id="sidebar">
+                        <i class="fa-solid fa-bars i" onclick="side()"></i>
+                    </div>
+                    <div class="navRightlink">
+                        <a class="navrighta" href="#home">HOME</a>
+                        <a class="navrighta" href="#about">ABOUT</a>
+                        <a class="navrighta" href="#skills">SKILLS</a>
+                        <a class="navrighta" href="#project">PROJECT</a>
+                        <a class="navrighta" href="#contact">CONTACT</a>
+                    </div>
+                </div>
+                <div class="daynight">
+                    <i class="fa-regular fa-sun day i" id="day" onclick="day()"></i>
+                    <i class="fa-regular fa-moon night i" id="night" onclick="night()"></i>
+                </div>
+            </div>
+        </nav>
         <div class="myself">
             <div class="myselfLeft">
                 <h1>
                     Hi 👋 , <br>
-                    I'm <span>G Suma,</span>
+                    I'm <span>G Suma</span>
                 </h1>
-                <h1>Full Stack Web Developer.</h1> 
+                <p class="fswd">Full Stack Web Developer</p>
                 <div class="resume">
+                    <p>Do you want to Know more about me </p>
+                    <!-- <span>Click 👉 </span> -->
                     <br>
                     
                     <button class="resumebtn">
-                        <a target="_blank" href="https://drive.google.com/file/d/1FU1qCqMHB8HztpFrYZqiZ2ZSypgDMjTE/view?usp=sharing">RESUME</a>
-                    </button>
-                    <button class="resumebtn">
-                        <a target="_blank" href="#contact">CONTACT</a>
+                        <a target="_blank" href="https://drive.google.com/file/d/1blFzKDpv-uHPZQC_80eM9U4oNA2ipu2e/view?usp=sharing">RESUME</a>
                     </button>
                 </div>
             </div>
             <div class="myselfRight">
-                <img src="./images/sumaa.jpg"  alt="My Image" border:black>
-               
+                <img src="images/services-web-development.png" alt="Web Devloper">
             </div>
-            
         </div>
-       
-
     </section>
-    <section class="s2" id="about">
-        <br>
-        <br>
-        <br>
-        <br>
-        
-        <div class="aboutme" >
-            <div>
-                <h2>About 👨‍💻</h2>
-            </div>
-            <div>
-             
-               <p>
-              Hello Everyone 👋,       
+    <section id="about">
+        <div class="profileimg">
+            <img src="./images/sumaa.jpg" alt="My Image" border:black>
+        </div>
+        <div class="aboutme">
+             <div>
+              
                 <p>
-                My name is G Suma  from Yellapur UttaraKannada. I'm BE graduate in Electronics and Communication. I have 8 month of work experience at EOX Vantage as Junior Analyst.
-                Im studying Full stack web developement course at MASAI SCHOOL.
-              </p>
-                    
+               Hello Everyone 👋,       
+                 <p>
+                 My name is G Suma  from Yellapur UttaraKannada. I'm BE graduate in Electronics and Communication. I have 8 month of work experience at EOX Vantage as Junior Analyst.
+                 Im studying Full stack web developement course at MASAI SCHOOL.
+               </p>
+                     
               <p>
-                I am passionate about building excellent softwares that improve the lives of those around me. I specialize in creating software for various domains. I learnt all  skills from Masai School, Google, Youtube and from various websites.
-                I'm confident, naturally curious, and regularly working to improve my skills.
-
-If I need to define myself in one sentence that would be a curious young person, ready to start a career in the IT field, a traveler, a photographer, an enthusiast, and tech-obsessed!!!
-I like coding, learning and bulding new things, problem solving, reading novels and singing.
-
+                 I am passionate about building excellent softwares that improve the lives of those around me. I specialize in creating software for various domains. I learnt all my skills from Masai School, Google, Youtube and from various websites.
                </p>
                <p>
-               
-                Looking forward to connecting with you. Thank You.
-              </p>
+                 I like coding, learning and bulding new things, problem solving, reading novels and singing.
                </p>
-             </div>
-       </div>
-
+                </p>
+              </div>
+        </div>
     </section>
-    <section class="s3" id="skills">
-        <br>
-        <br>
-        <br>
-        <br>
+    <section id="skills">
         <div class="skillsdiv">
             <h2>Technical Skills</h2>
             <div class="techskills">
-                
                 <div>
                     <img src="images/html.svg" alt="html logo">
                     <p><abbr title="Hyper Text Markup Language">HTML5</abbr></p>
@@ -183,33 +150,24 @@ I like coding, learning and bulding new things, problem solving, reading novels 
                     <img src="images/adaptibility.png" alt=" logo">
                     <p>ADAPTABILITY</p>
                 </div>
-                <!-- <div>
+                <div>
                     <img src="images/communication.png" alt=" logo">
                     <p>COMMUNICATION</p>
-                </div> -->
+                </div>
                 <div>
                     <img src="images/management.png" alt=" logo">
                     <p>MANAGEMENT</p>
                 </div>
             </div>
         </div>
-
     </section>
-    <section class="s4" id="project">
-        <br>
-        <br>
-        <br>
-        <br>
+    <section id="project">
         <div class="projectsdiv">
-            <div id="my_pro" >
-                <h2>My Projects</h2>
-            <p style="font-size: 12px;">Let's have a look at some of the projects I built during my course journey.  In starting, I tried to clone some famous website to sharpen my coding skills.  If you want me to join your project feel free to drop a mail to me.</p>
-            </div>
-            
+            <h1>My Projects</h1>
             <div class="project1">
                 <img src="images/sephora.jpeg" alt="webpage">
                 <div class="projdetals">
-                    <h3>Sephora Nnnow Clone</h3>
+                    <h1>Sephora Nnnow Clone</h1>
                     <p class="hidetxt">Sephora is a platform used to buy beauty and skin care products.</p>
                     <ul>
                         <li>Our team consisted 3 members. We started our project by dividing it among us and built this project within 4 days.</li>
@@ -226,7 +184,7 @@ I like coding, learning and bulding new things, problem solving, reading novels 
             <div class="project1">
                 <img src="images/youtube.jpeg" alt="webpage">
                 <div class="projdetals">
-                    <h3>YouTube Clone</h3>
+                    <h1>YouTube Clone</h1>
                     <p class="hidetxt">YouTube is most famous platform to watch video, study, vlog making, etc.</p>
                     <ul>
                         <li>I created this project during my assignments in Masai School within 3 days.</li>
@@ -239,18 +197,45 @@ I like coding, learning and bulding new things, problem solving, reading novels 
                     </div>
                 </div>
             </div>
-                      
+            <!-- <div class="project1">
+                <img src="images/freecodecamp.jpeg" alt="webpage">
+                <div class="projdetals">
+                    <h1>FreeCodeCamp Clone</h1>
+                    <p class="hidetxt">FreeCodeCamp is a platform which provide free content to study and provide certificate.</p>
+                    <ul>
+                        <li>I created this project before enrolled in Masai School by self learning.</li>
+                        <li>I was able to complete this project within in 3 days.</li>
+                        <li>I used HTML, CSS, JavaScript to build this project. I learnt a lot of new propert of CSS and JavaScript.</li>
+                    </ul>
+                    <div class="btns">
+                        <a target="_blank" href="https://github.com/Sarvar8950/freecodecamp_temp.github.io">Code</a>
+                        <a target="_blank" href="https://sarvar8950.github.io/freecodecamp_temp.github.io/">Live</a>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="project1">
+                <img src="images/internshala.jpeg" alt="webpage">
+                <div class="projdetals">
+                    <h1>Internshala Clone</h1>
+                    <p class="hidetxt">Internshala is a platform which help fresher and experienced person to get internships.</p>
+                    <ul>
+                        <li>I created this project before enrolled in Masai School by self learning.</li>
+                        <li>I was able to build this project within in 5 days</li>
+                        <li>I used HTML, CSS, JavaScript to build this project. I learn a lot of new property of CSS and JavaScript.</li>
+                    </ul>
+                    <div class="btns">
+                        <a target="_blank" href="https://github.com/Sarvar8950/internshala_clone.github.io">Code</a>
+                        <a target="_blank" href="https://sarvar8950.github.io/internshala_clone.github.io/#">Live</a>
+                    </div>
+                </div>
+            </div> -->
         </div>
-
     </section>
-    <section class="s5" id="contact">
-        
-        
+    <section id="contact">
         <footer>
-            <h1 style="color: white; align-content: center;">Contacts</h1>
-            <h2>Get In Touch 🤝</h2>
+            <h1>Get In Touch 🤝</h1>
             <p>Thanks for stopping by, I’m currently looking to join a new team of creative designers and developers. If you think we might be a good fit for one another, give me a call or send me an  email.</p>
-            <h2>Dont be a stranger! 👋</h2>
+            <h1>Dont be a stranger! 👋</h1>
             <p class="fade">Let's Connect Online</p>
             <div class="accounts">
                 <div class="mail">
@@ -259,11 +244,11 @@ I like coding, learning and bulding new things, problem solving, reading novels 
                 </div>
                 <div class="contact">
                     <i class="fa-solid fa-phone"></i>
-                    +91 8762592177 
-					
+                    +91 8762592177 <br>
+					(08419)200482
                 </div>
                 <div class="linkedin">
-                    <a target="_blank" href="https://www.linkedin.com/in/g-suma-3a61a9194/"> <i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                    <a target="_blank" href="https://www.linkedin.com/in/g-suma-3a61a9194/">"> <i class="fa-brands fa-linkedin"></i>LinkedIn</a>
                 </div>
                 <div class="github">
                     <a target="_blank" href="https://github.com/GSuma21"><i class="fa-brands fa-github"></i> GitHub</a>
@@ -271,16 +256,14 @@ I like coding, learning and bulding new things, problem solving, reading novels 
             </div>
             <p class="rights">Designed and build by G Suma, 2022 All rights reserved.</p>
         </footer>
-
     </section>
+
+ 
+
+
+
 </body>
+
 </html>
 
-<script>
-    const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
-})
-</script>
