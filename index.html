@@ -1,286 +1,474 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="suma.css">
-    <link rel="stylesheet" href="style1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /><title>G Suma</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <style>
-        /* style="justify-content:justufy;" */
-        #my_pro{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }    
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio | G Suma</title>
+        <link rel="icon" href="./images/logohome.png" />
 
-    </style>
-</head>
-<body>
-    <header  id="header" class="fixed-top">
-      <nav class="navbar">
-          <h2></h2>
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-          <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#project">PROJECT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+        <!-- font awesome cdn link  -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
 
-          </ul>
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- navbar section starts  -->
+
+        <nav class="navbar">
+            <a href="#home"> <img style="width: 30px; height: 30px;"  src="./images/logohome.png" /> <span></span> </a>
+            <a href="#about">
+                <i class="fas fa-user"></i> <span>About</span>
+            </a>
+            <a href="#skills">
+                <i class="fas fa-tools"></i> <span>Skills</span>
+            </a>
+            <a href="#project">
+                <i class="fas fa-briefcase"></i> <span>Project</span>
+            </a>
+            <a href="#contact">
+                <i class="fas fa-address-book"></i> <span>Contact</span>
+            </a>
+        </nav>
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            
+                <a href="#home"><img src="/images/logohome.png" alt="" /></a
+            ></a>
+            <div id="myLinks">
+                <a onclick="myFunction()" href="#home">Home</a>
+                <a onclick="myFunction()" href="#about">About</a>
+                <a onclick="myFunction()" href="#skills">Skills</a>
+                <a onclick="myFunction()" href="#project">Project</a>
+                <a onclick="myFunction()" href="#contact">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-      </nav>
-      
 
+        <!-- navbar section ends -->
 
-        
-    </header>
-    <section class="s" id="home">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="myself">
-            <div class="myselfLeft">
-                <h1>
-                    Hi 👋 , <br>
-                    I'm <span>G Suma,</span>
-                </h1>
-                <h1>Full Stack Web Developer.</h1> 
-                <div class="resume">
-                    <br>
-                    
-                    <button class="resumebtn">
-                        <a target="_blank" href="https://drive.google.com/file/d/1FU1qCqMHB8HztpFrYZqiZ2ZSypgDMjTE/view?usp=sharing">RESUME</a>
-                    </button>
-                    <button class="resumebtn">
-                        <a target="_blank" href="#contact">CONTACT</a>
-                    </button>
+        <!-- home section starts  -->
+
+        <section id="home">
+            <div class="person">
+                <div class="container1">
+                    <div class="container-inner">
+                        <img class="circle" src="./images/logohome.png" />
+                        <img class="img" src="./images/profilesuma.png" />
+                    </div>
                 </div>
             </div>
-            <div class="myselfRight">
-                <img src="./images/sumaa.jpg"  alt="My Image" border:black>
-               
-            </div>
-            
-        </div>
-       
 
-    </section>
-    <section class="s2" id="about">
-        <br>
-        <br>
-        <br>
-        <br>
-        
-        <div class="aboutme" >
-            <div>
-                <h2>About 👨‍💻</h2>
-            </div>
-            <div>
-             
-               <p>
-              Hello Everyone 👋,       
+            <div class="content">
+                <h1>Hi,</h1>
+                <!-- <h1>I'm  <span>G Suma,</span></h1> -->
+                <h1>I'm <span class="auto-typed"></span></h1>
+                <span>Full Stack Developer</span>
+                <p><q>Passionate about coding ...</q></p>
                 <p>
-                My name is G Suma  from Yellapur UttaraKannada. I'm BE graduate in Electronics and Communication. I have 8 month of work experience at EOX Vantage as Junior Analyst.
-                Im studying Full stack web developement course at MASAI SCHOOL.
-              </p>
-                    
-              <p>
-                I am passionate about building excellent softwares that improve the lives of those around me. I specialize in creating software for various domains. I learnt all  skills from Masai School, Google, Youtube and from various websites.
-                I'm confident, naturally curious, and regularly working to improve my skills.
-
-If I need to define myself in one sentence that would be a curious young person, ready to start a career in the IT field, a traveler, a photographer, an enthusiast, and tech-obsessed!!!
-I like coding, learning and bulding new things, problem solving, reading novels and singing.
-
-               </p>
-               <p>
-               
-                Looking forward to connecting with you. Thank You.
-              </p>
-               </p>
-             </div>
-       </div>
-
-    </section>
-    <section class="s3" id="skills">
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="skillsdiv">
-            <h2>Technical Skills</h2>
-            <div class="techskills">
-                
-                <div>
-                    <img src="images/html.svg" alt="html logo">
-                    <p><abbr title="Hyper Text Markup Language">HTML5</abbr></p>
-                </div>
-                <div>
-                    <img src="images/css.svg" alt="css logo">
-                    <p><abbr title="Cascading Style Sheet">CSS3</abbr></p>
-                </div>
-                <div>
-                    <img src="images/js.svg" alt="js logo">
-                    <p>JAVASCRIPT</p>
-                </div>
-                <div>
-                    <img src="images/react.svg" alt="react logo">
-                    <p>REACT</p>
-                </div>
-                <div>
-                    <img src="images/Bootstrap_logo.svg.png" alt="bootstrap logo">
-                    <p>BOOTSTRAP</p>
-                </div>
-                <!-- style="width: 132px; -->
-                <div>
-                    <img src="images/sass.png" alt="sass logo" >
-                    <p>SASS</p>
-                </div>
-                <div>
-                    <img src="images/nodeJs.svg" alt="node js logo">
-                    <p>NODE JS</p>
-                </div>
-                <div>
-                    <img src="images/github.svg" alt="github logo">
-                    <p>GitHub</p>
-                </div>
-                <div>
-                    <img src="images/git.svg" alt="git logo">
-                    <p>Git</p>
-                </div>
-                <div>
-                    <img src="images/dsa.png" alt="dsa logo">
-                    <p>DS & ALGO</p>
-                </div>
-                
+                    Dedicated, observant and an efficient Full Stack Developer
+                    with a specialization in MERN stack. Trained in leading
+                    frontend and backend Web Development while performing
+                    quality assurance. Able to effectively self-manage during
+                    independent projects as well as collaborate in a team
+                    setting. Seeking to further improve programming skills in a
+                    dynamic organization.
+                </p>
+                <!-- <a href="#about" class="btn">
+                    about me <i class="fas fa-user"></i>
+                </a> -->
+                <!-- <a href="#contact" class="btn">
+                    <div>
+                        <span class="bg"></span>
+                        <span class="base"></span>
+                        <span class="text"
+                            >Contact <i class="fas fa-address-book"></i
+                        ></span>
+                    </div>
+                </a> -->
+                <a href="https://drive.google.com/file/d/1FU1qCqMHB8HztpFrYZqiZ2ZSypgDMjTE/view?usp=sharing" class="btn">
+                    <div>
+                        <span class="bg"></span>
+                        <span class="base"></span>
+                        <span class="text">
+                            Resumé <i class="fas fa-download"></i
+                        ></span>
+                    </div>
+                </a>
             </div>
-            <h2>Soft Skills</h2>
-            <div class="soft">
-                
+        </section>
+
+        <!-- home section ends -->
+
+        <!-- about section starts  -->
+
+        <section id="about">
+            <h1 class="heading"><span>about</span>Me, Myself and I</h1>
+
+            <div class="row">
+                <h1>
+                    Im from Yellapur UttaraKannada. I'm BE graduate in Electronics and Communication. 
+                    I have 8 month of work experience at EOX Vantage as Junior Analyst.
+                    Im studying Full stack web developement course at MASAI SCHOOL.
+                </h1>
+                <h1>
+                    I have seen the invention of new technologies and always
+                    thought about how websites work, which triggered my
+                    curiosity to learn about technology. And I joined Masai
+                    School.
+                </h1>
+                <h1>
+                    My studies have provided me with excellent proficiency in
+                    the use of HTML, CSS, JavaScripts, MERN Stack Technology.
+                    Alongside this, I have developed various soft skills such as
+                    time management and presentation skill collaboration.
+                </h1>
+                <h1>
+                    Apart from Coding, I love to spend my time with my family
+                    and friends. I also enjoy cooking, singing and
+                    exploring new things in my free time.
+                </h1>
+
+                <!-- <a href="#" class="btn">
+                    Resume <i class="fas fa-download"></i>
+                </a> -->
+                <!-- <a href="#about" class="btn">
+                    <div>
+                        <span class="bg"></span>
+                        <span class="base"></span>
+                        <span class="text">
+                            Resumé <i class="fas fa-download"></i
+                        ></span>
+                    </div>
+                </a> -->
+            </div>
+        </section>
+
+        <!-- about section ends -->
+
+        <!-- skills section starts  -->
+
+        <section id="skills">
+            <h1 class="heading"><span>skills</span> My Learning Journey</h1>
+            <p><q>I'm still Learnin' casue i have a long way to go</q></p>
+
+            <div class="box-container">
                 <div>
-                    <img src="images/motivation.png" alt=" logo">
-                    <p>MOTIVATION</p>
+                    <div class="box">
+                        <img src="images/html.png" />
+                        <h3>HTML</h3>
+                    </div>
                 </div>
-                <div>
-                    <img src="images/teamwork.jpeg" alt=" logo">
-                    <p>TEAM WORK</p>
+
+                <div class="box">
+                    <img src="images/css.png" />
+                    <h3>CSS</h3>
                 </div>
-                <div>
-                    <img src="images/adaptibility.png" alt=" logo">
-                    <p>ADAPTABILITY</p>
+                <div class="box">
+                    <img src="images/javascript.png" />
+                    <h3>JavaScript</h3>
                 </div>
-                <!-- <div>
-                    <img src="images/communication.png" alt=" logo">
-                    <p>COMMUNICATION</p>
+                <div class="box">
+                    <img src="images/nodeJs.png" />
+                    <h3>Node.js</h3>
+                </div>
+                <!-- <div class="box">
+                    <img src="images/Restapi.png" />
+                    <h3>rest api</h3>
                 </div> -->
+                <div class="box">
+                    <img src="images/react.png" />
+                    <h3>React.js</h3>
+                </div>
+                <div class="box">
+                    <img src="images/redux.png" />
+                    <h3>Redux.js</h3>
+                </div>
+                <div class="box">
+                    <img src="images/mongoDb.png" />
+                    <h3>MongoDb</h3>
+                </div>
+                <div class="box">
+                    <img src="images/express.png" />
+                    <h3>Express.js</h3>
+                </div>
+                <div class="box">
+                    <img src="images/ES6.png" />
+                    <h3>ES6</h3>
+                </div>
+                <!-- <div class="box">
+                    <img src="images/bable.png" />
+                    <h3>Bable</h3>
+                </div>
+                <div class="box">
+                    <img src="images/webpack.png" />
+                    <h3>Webpack</h3>
+                </div> -->
+                <div class="box">
+                    <img src="images/mySQL.png" />
+                    <h3>MySQL</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- skills section ends -->
+
+        <!-- project section starts  -->
+
+        <section id="project">
+            <h1 class="heading"><span>project</span> My Coding Journey</h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/Project 1.png" alt="" />
+                    <div class="content">
+                        <h3>Sephora Nnnow Clone</h3>
+                        <p>
+                            Sephora is a French multinational retailer of
+                            personal care and beauty products. Featuring nearly
+                            340 brands, along with its own private label,
+                            Sephora Collection, Sephora offers beauty products
+                            including cosmetics, skincare, body, fragrance, nail
+                            color, beauty tools, body lotions and haircare.
+                        </p>
+                        <div class="tech-stack">
+                            <h3>HTML</h3>
+                            <span>|</span>
+                            <h3>CSS</h3>
+                            <span>|</span>
+                            <h3>JavaScript</h3>
+                        </div>
+                        <div class="check-btn">
+                            <a
+                                href="https://github.com/GSuma21/sephora_nnnow_com"
+                                class="btn"
+                            >
+                                <div>
+                                    <span class="bg"></span>
+                                    <span class="base"></span>
+                                    <span class="text">Code</span>
+                                </div>
+                            </a>
+                            <a
+                            href="https://sephora-nnnow-clone.netlify.app/"
+                            class="btn"
+                            >
+                            <div>
+                                <span class="bg"></span>
+                                <span class="base"></span>
+                                <span class="text">Live</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/projrctMyntra.PNG" alt="" />
+                    <div class="content">
+                        <h3>Myntra Clone</h3>
+                        <p>
+                            Myntra_Website Clone where users can log in through their mobile numbers
+                             can order clothings and other house hold things, and also can see their total 
+                             ordered items and their prices in the navbar. And also users can see their 
+                             ordered items by clicking on the cart logo and making payments to order. 
+                             A collaborative project, built-in 5 days by a team of 3 developers.
+                        </p>
+                        <div class="tech-stack">
+                            <h3>React</h3>
+                            <span>|</span>
+                            <h3>Redux</h3>
+                            <span>|</span>
+                            <h3>NodeJs</h3>
+                        </div>
+                        <div class="check-btn">
+                            <a
+                                href="https://github.com/Vishalrj750/Myntra_Clone"
+                                class="btn"
+                            >
+                                <div>
+                                    <span class="bg"></span>
+                                    <span class="base"></span>
+                                    <span class="text">Code</span>
+                                </div>
+                            </a>
+                            <a
+                                href="https://myntracloneusingredux.netlify.app/"
+                                class="btn"
+                            >
+                                <div>
+                                    <span class="bg"></span>
+                                    <span class="base"></span>
+                                    <span class="text">Live</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="box">
+                    <img src="images/Project 3.png" alt="" />
+                    <div class="content">
+                        <h3>Translate App</h3>
+                        <p>
+                            A web text Translate app that support more than 10
+                            languages. It tanslate one language to another by
+                            just a simple click.
+                        </p>
+                        <div class="tech-stack">
+                            <h3>HTML</h3>
+                            <span>|</span>
+                            <h3>CSS</h3>
+                            <span>|</span>
+                            <h3>JavaScript</h3>
+                        </div>
+                        <div class="check-btn">
+                            <a
+                                href="https://github.com/WasimRehmn/my-translate-app"
+                                class="btn"
+                            >
+                                <div>
+                                    <span class="bg"></span>
+                                    <span class="base"></span>
+                                    <span class="text">Code</span>
+                                </div>
+                            </a>
+                            <a
+                                href="https://my-translate.netlify.app/"
+                                class="btn"
+                            >
+                                <div>
+                                    <span class="bg"></span>
+                                    <span class="base"></span>
+                                    <span class="text">Live</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="box">
+                    <img src="images/img-4.jpg" alt="" />
+                    <div class="content">
+                        <h3>project 04</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Distinctio, praesentium.
+                        </p>
+                        <a href="#">read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/img-5.jpg" alt="" />
+                    <div class="content">
+                        <h3>project 05</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Distinctio, praesentium.
+                        </p>
+                        <a href="#">read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/img-6.jpg" alt="" />
+                    <div class="content">
+                        <h3>project 06</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Distinctio, praesentium.
+                        </p>
+                        <a href="#">read more</a>
+                    </div>
+                </div> -->
+            </div>
+
+            <!-- <a href="https://github.com/WasimRehmn" class="btn">
+                View more on <i class="fab fa-github"></i>
+            </a> -->
+            <a href="https://github.com/GSuma21" class="btn">
                 <div>
-                    <img src="images/management.png" alt=" logo">
-                    <p>MANAGEMENT</p>
+                    <span class="bg"></span>
+                    <span class="base"></span>
+                    <span class="text"
+                        >View more<i class="fab fa-github"></i>
+                    </span>
                 </div>
-            </div>
-        </div>
+            </a>
+        </section>
 
-    </section>
-    <section class="s4" id="project">
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="projectsdiv">
-            <div id="my_pro" >
-                <h2>My Projects</h2>
-            <p style="font-size: 18px;">Let's have a look at some of the projects I built during my course journey.  In starting, I tried to clone some famous website to sharpen my coding skills.  If you want me to join your project feel free to drop a mail to me.</p>
-            </div>
-            
-            <div class="project1">
-                <img src="images/sephora.jpeg" alt="webpage">
-                <div class="projdetals">
-                    <h3>Sephora Nnnow Clone</h3>
-                    <p class="hidetxt">Sephora is a platform used to buy beauty and skin care products.</p>
-                    <ul>
-                        <li>Our team consisted 3 members. We started our project by dividing it among us and built this project within 4 days.</li>
-                        <li>We built this project during our construct week at Masai School.</li>
-                        <li>We used HTML, CSS, JavaScript to bulit this project. I learnt how to use GitHub, how to work in a team and some more skills.</li>
-                    </ul>
-                    <div class="btns">
-                        <a target="_blank" href="https://github.com/GSuma21/sephora_nnnow_com">Code</a>
-                        <a target="_blank" href="https://gsuma21.github.io/sephora_nnnow_com/">Live</a>
-                        <a target="_blank" href="https://medium.com/@sarvar8950/cloning-project-sephora-nnnow-edf02b4e1e0a">Blog</a>
+        <!-- project section ends -->
+
+        <!-- contact section starts  -->
+
+        <section id="contact">
+            <h1 class="heading"><span>contact</span> me</h1>
+
+            <div class="row">
+                <div class="info-container">
+                    <p><q>Let's talk about Coding</q></p>
+
+                    <p>
+                        I'm would love to work with great companies and to
+                        engage in great projects that will change the future of
+                        web development.
+                    </p>
+
+                    <div class="box-container">
+                        <div class="box">
+                            <i class="fas fa-map"></i>
+                            <div class="info">
+                                <h3>Address :</h3>
+                                <p>H.No:23 Karakunki Nandolli Yellapur - 581359</p>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <h3>Email :</h3>
+                                <p>21gsuma@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <i class="fas fa-phone"></i>
+                            <div class="info">
+                                <h3>Number :</h3>
+                                <p>+91-8762592177</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="share">
+                        <a
+                            href="https://github.com/GSuma21"
+                            class="fab fa-github"
+                        ></a>
+                        <!-- <a
+                            href="https://twitter.com/wasimrehman_05"
+                            class="fab fa-twitter"
+                        ></a> -->
+                        <a
+                            href="https://www.linkedin.com/in/g-suma-3a61a9194/"
+                            class="fab fa-linkedin"
+                        ></a>
                     </div>
                 </div>
-            </div>
-            <div class="project1">
-                <img src="images/youtube.jpeg" alt="webpage">
-                <div class="projdetals">
-                    <h3>YouTube Clone</h3>
-                    <p class="hidetxt">YouTube is most famous platform to watch video, study, vlog making, etc.</p>
-                    <ul>
-                        <li>I created this project during my assignments in Masai School within 3 days.</li>
-                        <li>There are some functionality in this project like sidebar, and clickable buttons in navbar.</li>
-                        <li>I used HTML, CSS, JavaScript to build this project and also use YouTube API to fetch data.</li>
-                    </ul>
-                    <div class="btns">
-                        <a target="_blank" href="https://github.com/GSuma21/Youtube_clone.git">Code</a>
-                        <a target="_blank" href="https://gsuma21.github.io/Youtube_clone///">Live</a>
-                    </div>
-                </div>
-            </div>
-                      
-        </div>
 
-    </section>
-    <section class="s5" id="contact">
-        
-        
-        <footer>
-            <h1 style="color: white; align-content: center;">Contacts</h1>
-            <h2>Get In Touch 🤝</h2>
-            <p>Thanks for stopping by, I’m currently looking to join a new team of creative designers and developers. If you think we might be a good fit for one another, give me a call or send me an  email.</p>
-            <h2>Dont be a stranger! 👋</h2>
-            <p class="fade">Let's Connect Online</p>
-            <div class="accounts">
-                <div class="mail">
-                    <i class="fa-solid fa-envelope"></i>
-                    21gsuma@gmail.com
-                </div>
-                <div class="contact">
-                    <i class="fa-solid fa-phone"></i>
-                    +91 8762592177 
-					
-                </div>
-                <div class="linkedin">
-                    <a target="_blank" href="https://www.linkedin.com/in/g-suma-3a61a9194/"> <i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-                </div>
-                <div class="github">
-                    <a target="_blank" href="https://github.com/GSuma21"><i class="fa-brands fa-github"></i> GitHub</a>
-                </div>
             </div>
-            <p class="rights">Designed and build by G Suma, 2022 All rights reserved.</p>
-        </footer>
+        </section>
 
-    </section>
-</body>
+        <!-- contact section ends -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="index.js"></script>
+    </body>
 </html>
-
-<script>
-    const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
-})
-</script>
